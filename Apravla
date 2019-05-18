@@ -33,6 +33,7 @@ public static String deformaPalavraI(String palavra){
 ** @param palavra Palavra a ser deformada
 **/
 public static String deformaPalavraR(String palavra){
-    return "a";
+    if(palavra.length() == 0) return palavra;
+    return deformaPalavraR(palavra.substring(1)) + palavra.charAt(0);
 }
 }
