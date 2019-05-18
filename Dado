@@ -1,1 +1,34 @@
 
+/**
+ * Objeto Dado, para utilização no trabalho 2.
+ *
+ * @author Arthur e Gabriel
+ * @version 1.0
+ */
+import java.util.Random;
+public class Dado{
+    private int lado;
+    
+    /**
+     * Método construtor do dado.
+     */
+    public Dado(){
+        joga();
+    }
+    
+    /**
+     * Este método gera o número aleatório lado do dado.
+     */
+    public void joga(){
+       Random gerador = new Random();
+       lado = gerador.nextInt(6)+1;
+    }
+    
+    /**
+     * Este método verifica o lado atual do dado.
+     */
+    public int getLado(){
+        return lado;
+    }
+    
+}
