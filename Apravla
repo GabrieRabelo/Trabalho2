@@ -1,7 +1,7 @@
 
 /**
  * Esta aplicação troca a ordem das letras de forma que pegue a ultima e a primeira letra até terminar a palavra.
- * Ex: Entrada: arqueiro Saída: oarriqeu.
+ *
  * @author Arthur e Gabriel
  * @version 1.0
  */
@@ -16,17 +16,20 @@ public class Apravla{
     }
   
 /**
-** Este método deforma palavras conforme enunciado do exercício de forma Iterativa.
+** Este método iterativo deforma palavras conforme enunciado do exercício de forma Iterativa.
 ** @param palavra Palavra a ser deformada
 **/
 public static String deformaPalavraI(String palavra){
+    int i;
     String saida = "";
-    
+    for(i=palavra.length()-1;i>=0;i--){
+        saida += palavra.charAt(i);
+    }
     return saida;
 }
 
 /**
-** Este método deforma palavras conforme enunciado do exercício de forma Recursiva.
+** Este método iterativo deforma palavras conforme enunciado do exercício de forma Recursiva.
 ** @param palavra Palavra a ser deformada
 **/
 public static String deformaPalavraR(String palavra){
