@@ -1,1 +1,15 @@
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.util.Scanner;
+/**
+ * Jogo do dado, desenvolvido para o trabalho 2 de fundamentos de programação.
+ *
+ * @author Arthur Dutra e Gabriel Rabelo.
+ * @version 1.0
+ */
+public class JogoDado{
+    public static void main(String args[]){
+        Scanner teclado = new Scanner(System.in);
+    }
+}
