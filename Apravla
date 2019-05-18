@@ -1,4 +1,4 @@
-
+﻿
 /**
  * Esta aplicação troca a ordem das letras de forma que pegue a ultima e a primeira letra até terminar a palavra.
  * Ex: Entrada: arqueiro Saída: oarriqeu.
@@ -32,4 +32,5 @@ public static String deformaPalavraI(String palavra){
 public static String deformaPalavraR(String palavra){
     return "a";
 }
+
 }
