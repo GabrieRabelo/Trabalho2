@@ -13,13 +13,12 @@ public class Dado{
      * Método construtor do dado.
      */
     public Dado(){
-        joga();
     }
     
     /**
      * Este método gera o número aleatório lado do dado.
      */
-    public void joga(){
+    public void jogaDado(){
        Random gerador = new Random();
        lado = gerador.nextInt(6)+1;
     }
