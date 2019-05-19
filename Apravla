@@ -2,7 +2,7 @@
 /**
  * Esta aplicação troca a ordem das letras de forma que pegue a ultima e a primeira letra até terminar a palavra.
  *
- * @author Arthur e Gabriel
+ * @author Arthur Dutra e Gabriel Rabelo
  * @version 1.0
  */
 import java.util.Scanner;
