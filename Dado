@@ -2,7 +2,7 @@
 /**
  * Objeto Dado, para utilização no trabalho 2.
  *
- * @author Arthur e Gabriel
+ * @author Arthur Dutra e Gabriel Rabelo
  * @version 1.0
  */
 import java.util.Random;
