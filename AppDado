@@ -16,10 +16,12 @@ public class JogoDado{
         int max = 7;
         int pontuacao = 0;
         int soma;
-        System.out.println("\f..:: Jogo dos Dados ::..");
-        System.out.println("Regras: Se a soma der 2, perde tudo. Se a soma der 6 perde metade dos pontos. Boa sorte ;)");
+        System.out.println("\f=== Acerte a soma dos dados ===");
+        System.out.println("- Se a soma dos dados for igual à 2, sua pontuação será zerada.");
+        System.out.println("- Se a soma dos dados for igual à 6, sua pontuação sera reduzida pela metade.");
+        System.out.println("===      Boa Sorte ;)       ===");
         for(int rodada = 1; rodada<=max; rodada++){
-            System.out.println("-- Rodada: " + rodada + " de " + max + " --");
+            System.out.println("\n-- Rodada: " + rodada + " de " + max + " --");
             System.out.println("Pontuação atual: " + pontuacao);
             do{
                 System.out.print("Adivinhe a soma dos dois dados (2 a 12): ");
