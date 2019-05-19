@@ -42,7 +42,7 @@ public class JogoDado{
             }
             if (rodada != 7) {
                 System.out.println("Pontuação atual: " + pontuacao);
-                System.out.println("Faltam " + (7 - rodada) + " rodada(s).");
+                System.out.println("Restam " + (7 - rodada) + " rodada(s).");
             }
         }
         System.out.println("\n------ Fim de jogo ------");
