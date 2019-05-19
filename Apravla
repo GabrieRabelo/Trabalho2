@@ -7,12 +7,12 @@
  */
 import java.util.Scanner;
 public class Apravla{
-    public static void main (String arg[]){
+    public static void main (String args[]){
         Scanner teclado = new Scanner(System.in);
         System.out.println("Informe a palavra a ser transformada: ");
         String palavra = teclado.nextLine();
         System.out.println("Entrada: " + palavra + " Saída: " + deformaPalavraI(palavra));
-        System.out.println("Entrada: " + palavra + " Saída: " + deformaPalavraR(palavra));
+        System.out.println("Entrada: " + palavra + " Saída: " + deformaPalavraR(palavra, palavra.length()-1));
     }
   
 /**
@@ -20,9 +20,11 @@ public class Apravla{
 ** @param palavra Palavra a ser deformada
 **/
 public static String deformaPalavraI(String palavra){
-    int i;
+    int tamanho = (palavra.length()-1)/2;
     String saida = "";
-    for(i=palavra.length()-1;i>=0;i--){
+    for(int i = 0;i<=tamanho;i++){
+        int j = (palavra.length()-1)-i;
+        if (j != i) saida += palavra.charAt(j);
         saida += palavra.charAt(i);
     }
     return saida;
@@ -32,8 +34,9 @@ public static String deformaPalavraI(String palavra){
 ** Este método iterativo deforma palavras conforme enunciado do exercício de forma Recursiva.
 ** @param palavra Palavra a ser deformada
 **/
-public static String deformaPalavraR(String palavra){
-    if(palavra.length() == 0) return palavra;
-    return deformaPalavraR(palavra.substring(1)) + palavra.charAt(0);
+public static String deformaPalavraR(String palavra,int i){
+    int j = (palavra.length() -1) -i;
+    if (j == i || j-i == 1) return "";
+    return "" + palavra.charAt(i) + palavra.charAt(j) + deformaPalavraR(palavra, i-1);
 }
 }
