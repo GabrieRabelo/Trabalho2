@@ -14,12 +14,17 @@ public class JogoDado{
         Dado d1 = new Dado();
         Dado d2 = new Dado();
         int max = 7;
-        int pontuacao = 0;
+        int pontuacao = 0;        
         int soma;
-        System.out.println("\f..:: Jogo dos Dados ::..");
-        System.out.println("Regras: Se a soma der 2, perde tudo. Se a soma der 6 perde metade dos pontos. Boa sorte ;)");
+        System.out.println("-----O jogo começou!-----");
+        System.out.println("===Os dados foram jogados!===");
+        System.out.println("===Você terá 7 chances===");
+        System.out.println("===Qual a soma dos dados?===");
+        System.out.println("===Se a soma dos dados for igual à 2, sua pontuação será zerada===");
+        System.out.println("===Se a soma dos dados for igual à 6, sua pontuação sera reduzida pela metade");
+        System.out.println("\f");
         for(int rodada = 1; rodada<=max; rodada++){
-            System.out.println("-- Rodada: " + rodada + " de " + max + " --");
+            System.out.println("..:: Jogo dos dados - Rodada: " + rodada + " de " + max + " ::..");
             System.out.println("Pontuação atual: " + pontuacao);
             do{
                 System.out.print("Adivinhe a soma dos dois dados (2 a 12): ");
@@ -28,10 +33,6 @@ public class JogoDado{
             d1.jogaDado();
             d2.jogaDado();
             System.out.println("Dado 1: " + d1.getLado() + " \nDado 2: " + d2.getLado());
-            if(d1.getLado() + d2.getLado() == soma){
-                System.out.println("Booyah, acertou. +200 pontos.");
-                pontuacao += 200;
-            }
             if(d1.getLado() + d2.getLado() == 2) {
                 System.out.println("Que pena, a soma deu 2, perdeu tudo.");
                 pontuacao = 0;
@@ -39,6 +40,10 @@ public class JogoDado{
             else if(d1.getLado() + d2.getLado() == 6) {
                 System.out.println("Poxa vida, a soma deu 6, perdeu metade dos pontos.");
                 pontuacao /= 2;
+            }
+            else if(d1.getLado() + d2.getLado() == soma){
+                System.out.println("Booyah, acertou. +200 pontos.");
+                pontuacao += 200;
             }
         }
         System.out.println("\n------ Fim de jogo ------");
