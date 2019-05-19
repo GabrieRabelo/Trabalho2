@@ -21,10 +21,8 @@ public class JogoDado{
         System.out.println("- Se a soma dos dados for igual à 6, sua pontuação sera reduzida pela metade.");
         System.out.println("===      Boa Sorte ;)       ===");
         for(int rodada = 1; rodada<=max; rodada++){
-            System.out.println("\n-- Rodada: " + rodada + " de " + max + " --");
-            System.out.println("Pontuação atual: " + pontuacao);
             do{
-                System.out.print("Adivinhe a soma dos dois dados (2 a 12): ");
+                System.out.print("\nAdivinhe a soma dos dois dados (2 a 12): ");
                 soma = teclado.nextInt();
             }while(soma > 12 || soma < 2);
             d1.jogaDado();
@@ -41,6 +39,10 @@ public class JogoDado{
             else if(d1.getLado() + d2.getLado() == 6) {
                 System.out.println("Poxa vida, a soma deu 6, perdeu metade dos pontos.");
                 pontuacao /= 2;
+            }
+            if (rodada != 7) {
+                System.out.println("Pontuação atual: " + pontuacao);
+                System.out.println("Faltam " + (7 - rodada) + " rodada(s).");
             }
         }
         System.out.println("\n------ Fim de jogo ------");
