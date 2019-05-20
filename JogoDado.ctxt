@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=JogoDado
+comment0.text=\r\n\ Jogo\ do\ dado,\ desenvolvido\ para\ o\ trabalho\ 2\ de\ fundamentos\ de\ programa\u00E7\u00E3o.\r\n\r\n\ @author\ Arthur\ Dutra\ e\ Gabriel\ Rabelo.\r\n\ @version\ 1.0\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=pontuacao
+comment2.target=void\ verificaVencedor(int)
+comment3.params=
+comment3.target=int\ leitura()
+comment4.params=nome\ pontuacao
+comment4.target=void\ gravacao(java.lang.String,\ int)
+numComments=5

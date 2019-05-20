@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Dado
+comment1.params=
+comment1.target=Dado()
+comment1.text=\r\n\ M\u00E9todo\ construtor\ do\ dado.\r\n
+comment2.params=
+comment2.target=void\ jogaDado()
+comment2.text=\r\n\ Este\ m\u00E9todo\ gera\ o\ n\u00FAmero\ aleat\u00F3rio\ lado\ do\ dado.\r\n
+comment3.params=
+comment3.target=int\ getLado()
+comment3.text=\r\n\ Este\ m\u00E9todo\ verifica\ o\ lado\ atual\ do\ dado.\r\n
+numComments=4
