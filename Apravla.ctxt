@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Apravla
+comment0.text=\r\n\ Esta\ aplica\u00E7\u00E3o\ troca\ a\ ordem\ das\ letras\ de\ forma\ que\ pegue\ a\ ultima\ e\ a\ primeira\ letra\ at\u00E9\ terminar\ a\ palavra.\r\n\r\n\ @author\ Arthur\ Dutra\ e\ Gabriel\ Rabelo\r\n\ @version\ 1.0\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=palavra
+comment2.target=java.lang.String\ deformaPalavraI(java.lang.String)
+comment2.text=\r\n\ Este\ m\u00E9todo\ iterativo\ deforma\ palavras\ conforme\ enunciado\ do\ exerc\u00EDcio\ de\ forma\ Iterativa.\r\n\ @param\ palavra\ Palavra\ a\ ser\ deformada\r\n
+comment3.params=palavra\ pos
+comment3.target=java.lang.String\ deformaPalavraR(java.lang.String,\ int)
+comment3.text=\r\n\ Este\ m\u00E9todo\ iterativo\ deforma\ palavras\ conforme\ enunciado\ do\ exerc\u00EDcio\ de\ forma\ Recursiva.\r\n\ @param\ palavra\ Palavra\ a\ ser\ deformada\r\n\ @param\ pos\ Comprimento\ da\ palavra.\r\n
+numComments=4
